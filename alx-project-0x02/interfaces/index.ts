@@ -25,3 +25,17 @@ export interface ButtonProps {
   shape?: 'rounded-sm' | 'rounded-md' | 'rounded-full';
   className?: string;
 }
+
+/**
+ * Defines the properties for a single post.
+ * @param id - The unique identifier for the post.
+ * @param title - The title of the post.
+ * @param body - The content of the post.
+ * @param userId - The ID of the user who created the post.
+ */
+export interface PostProps {
+  id: number;
+  title: string;
+  body: string;
+  userId: number;
+}
