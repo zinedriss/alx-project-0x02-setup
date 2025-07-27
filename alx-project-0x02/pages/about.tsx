@@ -1,11 +1,13 @@
 // pages/about.tsx
 import type { NextPage } from 'next';
+import Header from '@/components/layout/Header';
 import Button from '@/components/common/Button';
 import styles from '../styles/About.module.css';
 
 const AboutPage: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
+      <Header />
       <main className={styles.main}>
         <h1 className={styles.title}>
           This is the About Page
@@ -38,7 +40,7 @@ const AboutPage: NextPage = () => {
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
