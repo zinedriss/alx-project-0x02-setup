@@ -1,5 +1,5 @@
 // components/common/Card.tsx
-import { CardProps } from '../../interfaces';
+import { type CardProps } from '@/interfaces';
 import styles from './Card.module.css';
 
 /**
