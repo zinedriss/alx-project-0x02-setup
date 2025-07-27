@@ -11,7 +11,7 @@ interface UsersPageProps {
 
 /**
  * The Users page component.
- * It receives the users as props from getStaticProps and renders them.
+ * It receives the users as props from getStaticProps and renders them using UserCard.
  * @param {UsersPageProps} { users } - The props containing the users data.
  * @returns {JSX.Element} The rendered users page.
  */
@@ -33,6 +33,7 @@ const UsersPage: NextPage<UsersPageProps> = ({ users }) => {
 
 /**
  * Fetches user data at build time using getStaticProps.
+ * This function runs on the server side and will not be included in the client-side bundle.
  * @returns {Promise<{ props: UsersPageProps }>} An object containing the props for the page.
  */
 export const getStaticProps: GetStaticProps<UsersPageProps> = async () => {
