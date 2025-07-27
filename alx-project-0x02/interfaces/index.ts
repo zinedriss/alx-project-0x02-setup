@@ -39,3 +39,31 @@ export interface PostProps {
   body: string;
   userId: number;
 }
+
+/**
+ * Defines the structure for a user's address.
+ */
+export interface Address {
+  street: string;
+  suite: string;
+  city: string;
+  zipcode: string;
+  geo: {
+    lat: string;
+    lng: string;
+  };
+}
+
+/**
+ * Defines the properties for a single user.
+ * @param id - The unique identifier for the user.
+ * @param name - The name of the user.
+ * @param email - The email address of the user.
+ * @param address - The address of the user.
+ */
+export interface UserProps {
+  id: number;
+  name: string;
+  email: string;
+  address: Address;
+}
