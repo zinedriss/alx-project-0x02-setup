@@ -32,8 +32,8 @@ const UsersPage: NextPage<UsersPageProps> = ({ users }) => {
 };
 
 /**
- * Fetches user data at build time using getStaticProps.
- * This function runs on the server side and will not be included in the client-side bundle.
+ * This function, getStaticProps, fetches data at build time.
+ * It runs on the server-side and ensures the user data is available when the page is rendered.
  * @returns {Promise<{ props: UsersPageProps }>} An object containing the props for the page.
  */
 export const getStaticProps: GetStaticProps<UsersPageProps> = async () => {
